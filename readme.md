@@ -1,0 +1,1 @@
+Criei projetos pessoais com o objetivo de facilitar tarefas cotidianas.
