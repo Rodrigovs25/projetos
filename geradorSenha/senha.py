@@ -22,24 +22,22 @@ def lerTipo():
 
 def selecionarTipo(tipo):
     if tipo == 1:
-        caracteres = string.ascii_lowercase
+        return string.ascii_lowercase
     elif tipo == 2:
-        caracteres = string.ascii_uppercase
+        return string.ascii_uppercase
     elif tipo == 3:
-        caracteres = string.digits
+        return string.digits
     elif tipo == 4:
-        caracteres = string.ascii_uppercase + string.digits
+        return string.ascii_uppercase + string.digits
     elif tipo == 5:
-        caracteres = string.ascii_lowercase + string.digits
+        return string.ascii_lowercase + string.digits
     elif tipo == 6:
-        caracteres = string.ascii_letters + string.digits
+        return string.ascii_letters + string.digits
     elif tipo == 7:
-        caracteres = string.ascii_letters + string.digits + string.punctuation
+        return string.ascii_letters + string.digits + string.punctuation
     else:
         print("Opção inválida. Gerando senha com letras minúsculas.")
-        caracteres = string.ascii_lowercase
-
-    return caracteres
+        return string.ascii_lowercase
 
 def gerarSenha(n, tipo):
     caracteres = selecionarTipo(tipo)
