@@ -1,4 +1,4 @@
-# 🐍 Projetos em Python
+# Projetos pessoais
 
 Este repositório contém uma coleção de pequenos projetos desenvolvidos em Python com fins educacionais, experimentais e de prática de programação para solucionar alguns problemas cotidianos.
 
