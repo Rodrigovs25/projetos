@@ -58,5 +58,4 @@ def main():
 
     print("\nSenha gerada:", senha)
 
-
 main()
