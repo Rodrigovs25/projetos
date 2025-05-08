@@ -20,7 +20,7 @@ def lerTipo():
     tipo = int(input("Opção: "))
     return tipo
 
-def gerarSenha(n, tipo):
+def selecionarTipo(tipo):
     if tipo == 1:
         caracteres = string.ascii_lowercase
     elif tipo == 2:
@@ -39,6 +39,10 @@ def gerarSenha(n, tipo):
         print("Opção inválida. Gerando senha com letras minúsculas.")
         caracteres = string.ascii_lowercase
 
+    return caracteres
+
+def gerarSenha(n, tipo):
+    caracteres = selecionarTipo(tipo)
     senha = ''.join(random.choice(caracteres) for _ in range(n))
     return senha
 
