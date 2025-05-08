@@ -40,11 +40,16 @@ def selecionarTipo(tipo):
         return string.ascii_lowercase
 
 def gerarSenha(n, tipo):
-    caracteres = selecionarTipo(tipo)
-    senha = ''.join(random.choice(caracteres) for _ in range(n))
+    lista_de_caracteres = []
+
+    # Adiciona n caracteres aleatórios à lista
+    for i in range(n):
+        lista_de_caracteres.append(random.choice(selecionarTipo(tipo)))
+
+    # Junta todos os caracteres da lista em uma string (a senha final)
+    senha = ''.join(lista_de_caracteres)
     return senha
 
-# Menu
 def main():
     n = lerNumero()
     printMenu()
@@ -53,5 +58,5 @@ def main():
 
     print("\nSenha gerada:", senha)
 
-if __name__ == "__main__":
-    main()
+
+main()
